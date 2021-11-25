@@ -1,4 +1,4 @@
-cv.aux
-cv.log
-cv.out
-cv.pdf
+cv.*
+*.tex
+!cv.tex
+!cv.cls
