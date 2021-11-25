@@ -28,7 +28,7 @@
 \RequirePackage[%
   colorlinks = true,
   citecolor  = hd-red,
-  linkcolor  = hd-red,
+  linkcolor  = black,
   urlcolor   = black,
   filecolor  = hd-red,      
   pdfpagemode= FullScreen,
@@ -36,13 +36,22 @@
 
 \RequirePackage{bookmark}
 
+\usepackage{xcolor}
+\newcommand{\link}[2]{\href{#1} {\underline{#2}}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % MACROS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% people
 
+\newcommand{\rhn}{\href{https://www.linkedin.com/in/rahmoun-abdellatif-84bb0a39/}{Pr. Rahmoun Abdellatif}}
+
+% institutes
+\newcommand{\esi}{Higher School of of Computer Science 08 May 1945 - Sidi Bel Abbes -- \href{https://esi-sba.dz}{ESI-SBA \www } } 
+\newcommand{\med}{Yahiya Fares University(Medea)}
+% other
 \newcommand{\contact}[2]{\href {#1} {\emph {#2}}}
-\newcommand{\link}[2]{\href{#1} {\underline{#2}}}
 % Link images
 \newcommand{\lkd}{\includegraphics[height=.85em]{img/new/linkedin.png}}
 \newcommand{\yt}{\includegraphics[height=.85em]{img/new/yt.png}}
@@ -51,6 +60,10 @@
 \newcommand{\phone}{\includegraphics[height=.85em]{img/phone.png}}
 \newcommand{\www}{\includegraphics[height=.85em]{img/www.png}}
 \newcommand{\email}{\includegraphics[height=.85em]{img/email.png}}
+%% certifications
+\newcommand{\redhat}{\includegraphics[height=1.3em]{img/redhat.png}}
+\newcommand{\cisco}{\includegraphics[height=1.3em]{img/cisco.png}}
+\newcommand{\juniper}{\includegraphics[height=.75em]{img/juniper.png}}
 
 % sections and subsections
 \RequirePackage{titlesec}
@@ -72,18 +85,10 @@
 \newcommand{\name}[1]{%
     \centerline{\normalsize\bfseries{#1}}
 }
-%% Your contact info here
-%\newcommand{\contact}[2]{
-        %\makebox[110pt][c]{
-            %#1 \normalsize\itshape{#2}   
-            %}
-        %}
-%\newcommand{\longcontact}[5]{%
-    %\noindent
-    %#1\hfill {\large\textperiodcentered}\hfill #2\hfill
-    %{\large\textperiodcentered}\hfill #3\\
-    %#4\hfill #5%
-%}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       CONTACT ICONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\entry}[2]{%
+    \subsection[#1]{#1 \hspace{.7cm} #2}%
+}
