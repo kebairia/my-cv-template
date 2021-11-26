@@ -1,23 +1,61 @@
 % vim: fdm=marker:et:sw=2:
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                Identification
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% MACROS {{{1
+%%%%%%%%%%%
+% people
+%-------
+\newcommand{\rhn}{\href{https://www.linkedin.com/in/rahmoun-abdellatif-84bb0a39/}{Pr. Rahmoun Abdellatif}}
+% Institutes
+%-----------
+\newcommand{\esi}{Higher School of of Computer Science 08 May 1945 - Sidi Bel Abbes -- \href{https://esi-sba.dz}{ESI-SBA \www } } 
+\newcommand{\med}{Yahiya Fares University(Medea)}
+% Link images
+%------------
+\newcommand{\lkd}{\includegraphics[height=.85em]{img/new/linkedin.png}}
+\newcommand{\yt}{\includegraphics[height=.85em]{img/new/yt.png}}
+\newcommand{\gh}{\includegraphics[height=.85em]{img/new/git.png}}
+\newcommand{\tw}{\includegraphics[height=.85em]{img/new/twitter.png}}
+\newcommand{\location}{\includegraphics[height=.85em]{img/new/location.png}}
+\newcommand{\phone}{\includegraphics[height=.85em]{img/phone.png}}
+\newcommand{\www}{\includegraphics[height=.85em]{img/www.png}}
+\newcommand{\email}{\includegraphics[height=.85em]{img/email.png}}
+%% Certifications
+%----------------
+\newcommand{\redhat}{\includegraphics[height=1.3em]{img/redhat.png}}
+\newcommand{\cisco}{\includegraphics[height=1.3em]{img/cisco.png}}
+\newcommand{\juniper}{\includegraphics[height=.75em]{img/juniper.png}}
+% Other
+%-------
+\newcommand{\contact}[2]{\href {#1} {\emph {#2}}}
+% }}}
+
 \documentclass{cv}
 \begin{document}
 \name{ZAKARIA KEBAIRIA}
 
-\begin{tabular}{l l}
-  \contact{https://www.github.com/kebairia}{\gh \hspace{2mm}kebairia} \hspace{11cm} & 
-  {\emph {Algeria, Medea, Ksar el boukhari}}  \\ 
-
-  \contact{https://www.linkedin.com/in/zakaria.kebairia/}{\lkd \hspace{2mm}zakaria.kebairia} & 
+\begin{tabular}{l l l l l}
+  \contact{https://www.github.com/kebairia}{\gh \hspace{2mm}kebairia}  &
+  \hspace{5mm}
+  \contact{https://www.linkedin.com/in/zakaria.kebairia/}{\lkd \hspace{2mm}zakaria.kebairia}  &
+  \hspace{5mm}
+  \contact{"https://www.twitter.com/z\_kebairia/"}{\tw \hspace{2mm}@z\_kebairia} &
+  \hspace{5mm}
+  \contact{"https://www.youtube.com/channel/UC7OqXJDFQI8_WFC6WnsWCrg"}{\yt \hspace{2mm}3Point14} &
+  \hspace{5mm}
   \contact {kebairia.github.io}{\www \hspace{2mm}kebairia.github.io} \\
 
-  \contact{"https://www.twitter.com/z_kebairia/"}{\tw \hspace{2mm}@z\_kebairia} & 
-  \contact {tel:(+213)674696662}{\phone \hspace{2mm} (+213)674696662} \\
-
-  \contact{"https://www.youtube.com/channel/UC7OqXJDFQI8_WFC6WnsWCrg"}{\yt \hspace{2mm}3Point14}
 \end{tabular}
+\vspace{.2cm}
+
+\begin{tabular}{l l l}
+  {\location \hspace{2mm} \emph {Algeria, Médéa, Ksar el boukhari}} &
+  \hspace{8mm}
+  \contact{mailto:4.kebairia@gmail.com}{\email \hspace{2mm}4.kebairia@gmail.com} &
+  \hspace{2.1cm}
+  \contact {tel:(+213)674696662}{\phone \hspace{2mm} (+213)674696662} \\
+\end{tabular}
+
+  
 
 \section{Summary}
   \begin{itemize}
@@ -28,26 +66,30 @@
     \item I am an open source enthusiast and contribute in my free time. You can check the public code and projects that I’m contributing in on: \link{www.github.com/kebairia}{github.com/kebairia}
     \item I often post articles on my blog on: \link{kebairia.github.io}{kebairia.github.com} 
   \end{itemize}%
+%Education {{{1
 \section{Education}
+  \entry{2021}{Master's Degree in Computer Science, Ecole Superieure d'informatique, SBA -- Algeria}{}{\footnotesize{(Supervised by \rhn)}}
 
+  \entry{2021}{Engineering Degree (Computer Science), Ecole Superieure d'informatique, SBA -- Algeria}{}{\footnotesize{(Supervised by \rhn)}}
 
-%\entry{2004--2008}{University of Nowhere}
-%I attended the University of Nowhere from 2004 to 2008.\\
-\begin{tabular}{l l}
-  {2021} & {\hspace{1.3cm }Master's Degree in Computer Science , Ecole Superieure d'informatique, SBA -- Algeria} \\
-  {2021} & {\hspace{1.3cm }Engineering Degree (Computer Science), Ecole Superieure d'informatique, SBA -- Algeria} \\
-\end{tabular}
-\begin{itemize}
-  \item \textbf{Thesis} \emph{``Edge and Fog Computing Based Video Management System''} \footnotesize{(Supervised by \rhn)}\normalsize.
-  \item \normalsize{\textbf{Graduate Coursework includes:}} \small {Internet of Things, Edge and Fog Computing, Video Management Systems, Infrastructure as Code, Virtualization, Containerization, System Administration, DevOps, Networking}. 
-\end{itemize}
+  \begin{itemize}%
+    \item \normalsize{\textbf{Graduate Coursework includes:}} \small {Internet of Things, Edge and Fog Computing, Video Management Systems, Infrastructure as Code, Virtualization, Containerization, System Administration, DevOps, Networking}. 
+
+  \end{itemize}%
+  %\entry{2021}{Engineering Degree (Computer Science), Ecole Superieure d'informatique, SBA -- Algeria}{}{}
+%}}}
 \section{Certifications}
-\begin{tabular}{l l}
-  {Jul 2019} & {\hspace{.7cm }RedHat Certified System Administrator -- \emph{RHCSA}} \\
-  {Oct 2019} & {\hspace{.7cm }Juniper Networks Certified Associate (Cloud) -- \emph{JNCA}}  \\
-  {Feb 2020} & {\hspace{.7cm }Cisco Certified Network Associate Routing and Switching -- \emph{CCNA}} \\
-\end{tabular}
+
+  \entry{Jul 2019}{RedHat Certified System Administrator}{RHCSA}{}
+  \entry{Oct 2019}{Juniper Networks Certified Associate (Cloud)}{JNCA}{}
+  \entry{Feb 2020}{Cisco Certified Network Associate Routing and Switching}{CCNA}{}
 
 \section{Work Experience \& Projects}
+%\begin{tabular}{l l}
+  %{2015} & \hspace{.5cm} \textbf{MIT (USA): Postdoctoral Associate (4 years)}\\
+%\end{tabular}
+\experience{sldkfj}{sldkjf}
+{ lskdjfsdf
+   lskdjf}
 \section{Presentations \& Courses}
 \end{document}
