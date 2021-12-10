@@ -1,10 +1,14 @@
 % vim: set ft=tex
-\LoadClass{article}
+\LoadClass[11pt, letterpaper]{article}
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mire}[2021/11/24 Minimal resume class]
 \usepackage{geometry}
-\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
 \geometry{a4paper, margin=.4in,top=.2in}
+
+\usepackage{graphicx}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -19,7 +23,7 @@
 \definecolor{hd-blue}  {RGB}{70, 129, 180}
 
 \usepackage{fontspec}
-\setmainfont{Minion Pro}
+\setmainfont{Cronos Pro}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Hyperlinks & bookmarks
@@ -27,21 +31,23 @@
 
 \RequirePackage[%
   colorlinks = true,
-  citecolor  = hd-red,
+  citecolor  = black,
   linkcolor  = black,
   urlcolor   = black,
-  filecolor  = hd-red,      
+  filecolor  = black,      
   pdfpagemode= FullScreen,
   ]{hyperref}
 
 \RequirePackage{bookmark}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands and Macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{xcolor}
 \newcommand{\link}[2]{\href{#1} {\underline{#2}}}
 
-
-
 % sections and subsections
+%-------------------------
 \RequirePackage{titlesec}
 \titleformat{\section}                  % Customise the \section command 
   {\large\bfseries\scshape\raggedright} % Make the \section headers large (\Large),
@@ -58,54 +64,42 @@
   \section[#1]{#1 \hfill #2}%
 }
 %% You name here
+%---------------
 \newcommand{\name}[1]{%
     \centerline{\normalsize\bfseries{#1}}
 \vspace{.3cm}
 }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%       CONTACT ICONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\newcommand{\entry}[2]{%
-    %\subsection[#1]{#1 \hspace{.7cm} #2}%
-%}
-% Making the \entry command
-
-%\newcommand{\slimentry}[2]{
-
-%\begin{minipage}[t]{.15\linewidth}
-%\hfill \textsc{#1}
-%\end{minipage}
-%\hfill\vline\hfill
-%\begin{minipage}[t]{.80\linewidth}
-%#2
-%\end{minipage}\\
-%\vspace{.25cm}
-%}
-
+% Entries
+%--------
 \newcommand{\entry}[4]{
-%\ifthenelse{\isempty{#3}}
-%{\slimentry{#1}{#2}}{
-
 \begin{minipage}[t]{.15\linewidth}
 \textsc{#1}
 \end{minipage}
-%\hfill
 \begin{minipage}[t]{.80\linewidth}
-{\bf#2}\\\textit{#3} \footnotesize{#4}
+{\bf#2}\\\textit{#3}\\ \normalsize{#4}
 \end{minipage}\\
-\vspace{.2cm}
 }
 
-\newcommand{\experience}[3]{
-    \begin{minipage}[t]{.10\linewidth}
-        #1
-    \end{minipage}
-    \begin{minipage}[t]{.80\linewidth}
-        {\bf#2}\\
-        \begin{itemize}
-            \item #3 
-        \end{itemize}
-    \end{minipage}\\
-\vspace{.2cm}
+% Contacts
+%---------
+\newcommand{\contact}[2]{
+  \href {#1} {\emph {#2}}
+}
+% skills
+
+\usepackage{tikz}
+
+\definecolor{white}{RGB}{255,255,255}
+\definecolor{gray}{HTML}{4D4D4D}
+\definecolor{_black}{HTML}{1d2021}
+\definecolor{maingray}{HTML}{B9B9B9}
+
+\newcommand\skills[1]{ 
+    \begin{tikzpicture}
+        \foreach [count=\i] \x/\y in {#1}{
+            \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+            \draw[fill=white,_black](0,\i) rectangle (\y,\i+0.4);
+            \node[above right] at (0,\i+0.4) {\x};
+        }
+    \end{tikzpicture}
 }

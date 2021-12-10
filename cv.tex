@@ -1,24 +1,25 @@
 % vim: fdm=marker:et:sw=2:
-
 % MACROS {{{1
-%%%%%%%%%%%
+
 % people
 %-------
-\newcommand{\rhn}{\href{https://www.linkedin.com/in/rahmoun-abdellatif-84bb0a39/}{Pr. Rahmoun Abdellatif}}
+\newcommand{\rhn}{\link{https://www.linkedin.com/in/rahmoun-abdellatif-84bb0a39/}{Pr. Rahmoun Abdellatif}}
 % Institutes
 %-----------
-\newcommand{\esi}{Higher School of of Computer Science 08 May 1945 - Sidi Bel Abbes -- \href{https://esi-sba.dz}{ESI-SBA \www } } 
+\newcommand{\lesi}{Higher School of of Computer Science 08 May 1945 - Sidi Bel Abbes -- \link{https://esi-sba.dz}{ESI-SBA} } 
+\newcommand{\esi}{Higher School of of Computer Science -- \link{https://esi-sba.dz}{ESI-SBA} } 
 \newcommand{\med}{Yahiya Fares University(Medea)}
 % Link images
 %------------
-\newcommand{\lkd}{\includegraphics[height=.85em]{img/new/linkedin.png}}
-\newcommand{\yt}{\includegraphics[height=.85em]{img/new/yt.png}}
-\newcommand{\gh}{\includegraphics[height=.85em]{img/new/git.png}}
-\newcommand{\tw}{\includegraphics[height=.85em]{img/new/twitter.png}}
-\newcommand{\location}{\includegraphics[height=.85em]{img/new/location.png}}
-\newcommand{\phone}{\includegraphics[height=.85em]{img/phone.png}}
-\newcommand{\www}{\includegraphics[height=.85em]{img/www.png}}
-\newcommand{\email}{\includegraphics[height=.85em]{img/email.png}}
+\newcommand{\lkd}{\includegraphics[height=.85em]{img/linkedin.png}}
+\newcommand{\yt}{\includegraphics[height=.85em]{img/yt.png}}
+\newcommand{\gh}{\includegraphics[height=.85em]{img/git.png}}
+\newcommand{\tw}{\includegraphics[height=.85em]{img/twitter.png}}
+\newcommand{\location}{\includegraphics[height=.85em]{img/location.png}}
+\newcommand{\phone}{\includegraphics[height=.89em]{img/phone_black.png}}
+\newcommand{\www}{\includegraphics[height=.85em]{img/globe.png}}
+\newcommand{\email}{\includegraphics[height=.9em]{img/email.png}}
+\newcommand{\award}{\includegraphics[height=1.3em]{img/award.png} }
 %% Certifications
 %----------------
 \newcommand{\redhat}{\includegraphics[height=1.3em]{img/redhat.png}}
@@ -26,70 +27,263 @@
 \newcommand{\juniper}{\includegraphics[height=.75em]{img/juniper.png}}
 % Other
 %-------
-\newcommand{\contact}[2]{\href {#1} {\emph {#2}}}
-% }}}
+%}}}
 
 \documentclass{cv}
+
 \begin{document}
 \name{ZAKARIA KEBAIRIA}
-
-\begin{tabular}{l l l l l}
+%Contact{{{1
+\begin{tabular}{l l l l}
+  \vspace{2mm}
   \contact{https://www.github.com/kebairia}{\gh \hspace{2mm}kebairia}  &
-  \hspace{5mm}
+  \hspace{4mm}
   \contact{https://www.linkedin.com/in/zakaria.kebairia/}{\lkd \hspace{2mm}zakaria.kebairia}  &
-  \hspace{5mm}
+  \hspace{4mm}
   \contact{"https://www.twitter.com/z\_kebairia/"}{\tw \hspace{2mm}@z\_kebairia} &
-  \hspace{5mm}
+  \hspace{4mm}
+  \location \hspace{2mm} \emph {Algeria, Médéa, Ksar el boukhari}\\
+
+
   \contact{"https://www.youtube.com/channel/UC7OqXJDFQI8_WFC6WnsWCrg"}{\yt \hspace{2mm}3Point14} &
-  \hspace{5mm}
-  \contact {kebairia.github.io}{\www \hspace{2mm}kebairia.github.io} \\
-
-\end{tabular}
-\vspace{.2cm}
-
-\begin{tabular}{l l l}
-  {\location \hspace{2mm} \emph {Algeria, Médéa, Ksar el boukhari}} &
-  \hspace{8mm}
+  \hspace{4mm}
   \contact{mailto:4.kebairia@gmail.com}{\email \hspace{2mm}4.kebairia@gmail.com} &
-  \hspace{2.1cm}
+  \hspace{4mm}
+  \contact {kebairia.github.io}{\www \hspace{2mm}kebairia.github.io} &
+  \hspace{4mm}
   \contact {tel:(+213)674696662}{\phone \hspace{2mm} (+213)674696662} \\
+
 \end{tabular}
-
-  
-
+%}}}
+%Summary{{{1
 \section{Summary}
-  \begin{itemize}
-    \item Master’s degree, Computer Science Engineer ESI-SBA.
-    \item Linux System Administrator (Ubuntu, Debian, RedHat, CentOS).
-    \item Network Administrator (Cisco).
-    \item Maintainer and developer of an Arch Linux- Auto-Ricing Script Under the name \link{https://github.com/kebairia/zars}{ZARS}.
-    \item I am an open source enthusiast and contribute in my free time. You can check the public code and projects that I’m contributing in on: \link{www.github.com/kebairia}{github.com/kebairia}
-    \item I often post articles on my blog on: \link{kebairia.github.io}{kebairia.github.com} 
-  \end{itemize}%
+
+Experienced in creating and delivering highly available fault tolerant infrastructure that supports hundreds of thousands of users, 
+has millions of records in the cloud and serves tens of millions of unique requests a day. 
+As part of a high performing team, my goals are to contribute to the growth and success of our customers and partners through technical excellence, continuous 
+improvement and best practices. 
+Also, I have been an instructor in system and network administration for more than three years
+%}}}
 %Education {{{1
 \section{Education}
-  \entry{2021}{Master's Degree in Computer Science, Ecole Superieure d'informatique, SBA -- Algeria}{}{\footnotesize{(Supervised by \rhn)}}
-
-  \entry{2021}{Engineering Degree (Computer Science), Ecole Superieure d'informatique, SBA -- Algeria}{}{\footnotesize{(Supervised by \rhn)}}
-
-  \begin{itemize}%
-    \item \normalsize{\textbf{Graduate Coursework includes:}} \small {Internet of Things, Edge and Fog Computing, Video Management Systems, Infrastructure as Code, Virtualization, Containerization, System Administration, DevOps, Networking}. 
-
-  \end{itemize}%
-  %\entry{2021}{Engineering Degree (Computer Science), Ecole Superieure d'informatique, SBA -- Algeria}{}{}
+\entry{2021}{Master's Degree in Computer Science, Higher School of Computer Science, SBA -- Algeria}
+{\footnotesize{(Supervised by \rhn)}}
+{}
+\entry{2021}{Engineering Degree (Computer Science), Higher School of Computer Science , SBA -- Algeria}
+{\footnotesize{(Supervised by \rhn)}}
+{}
 %}}}
+%Certifications{{{1
 \section{Certifications}
 
   \entry{Jul 2019}{RedHat Certified System Administrator}{RHCSA}{}
   \entry{Oct 2019}{Juniper Networks Certified Associate (Cloud)}{JNCA}{}
-  \entry{Feb 2020}{Cisco Certified Network Associate Routing and Switching}{CCNA}{}
+  \entry{Feb 2020}{Cisco Certified Network Associate (Routing and Switching)}{CCNA}{}
 
+%}}}
+%Work Exp & Projects {{{1
 \section{Work Experience \& Projects}
-%\begin{tabular}{l l}
-  %{2015} & \hspace{.5cm} \textbf{MIT (USA): Postdoctoral Associate (4 years)}\\
-%\end{tabular}
-\experience{sldkfj}{sldkjf}
-{ lskdjfsdf
-   lskdjf}
-\section{Presentations \& Courses}
+
+\entry{Sep 2019}
+    {Network Administration Internship}
+	{ \link{https://icttowers.com/}{ICTTOWERS} -- Sidi Bel Abess, Algeria\vspace{.2cm}}
+    {
+      • Hands-on managing and configuring of multiple switches and routers.\\
+      • Troubleshoot multiple routers and switches of various types.\\
+    }
+\entry{ Sep 2021}
+    {System Engineering internship %(6 months)% 
+    }
+    {LABRI Research Center \link{https://esi-sba.dz}{ESI-SBA} \& URD-SE internship -- Sidi Bel Abbès, Algeria\vspace{.2cm}}
+    {
+      \underline {Responsibilities}\vspace{.2cm}\\
+      • As a System Engineer, I developed and deployed a completely automated multi-layer infrastructure 
+      for detecting suspicious behavior in real time using Deep Learining.\\
+      • I was in charge of designing the project infrastructure, after attending multiple review session 
+      with the client.\\
+      • For project infrastructure, we used the Edge, Fog, and Cloud computing paradigms.\\
+      • Worked in different phases of DevOps such as Design, Code, Build, Test and Monitor.\\
+      • Developed automation frameworks for a variety of infrastructure components.\\
+      • Troubleshoot, and maintain the main infrastructure throughout the project period.\\
+      \underline {Tools \& Technologies}\\
+      • Languages : Python (Bash for scripting).\\
+      • Scalability: Vagrant, Ansible, Packer, Docker, Kubernetes.\\
+      • High Availability: Pacemaker, HAProxy, Keepalived for services and GlusterFS, NFS-Ganesha for file system server.\\
+      • Messaging Tool : Kafka.\\
+      • Monitoring Tool : Zabbix.\\
+      • Other technologies : kickstart, KVM, Git, GitHub.\\
+    }
+
+\subsection{Other Projects}
+
+\entry{Jun 2018}
+    {``Logiciel de gestion de Bibliotheque''}
+	{Sidi Bel Abess}
+	{}
+\entry{Jun 2019}
+    {``Logiciel de gestion personnel''}
+	{Sidi Bel Abess}
+	{}
+\entry{Jun 2020}
+    {``microservices infrastructure for surveillance cameras''}
+	{Sidi Bel Abess}
+	{}
+%}}}
+% Skill {{{1
+
+\section{Skills}
+\entry{Programming}
+    {\textnormal{Python(numpy, manim, matplotlib, scripting...)\\ 
+    Bash/shell(sed, awk, and general scripting) \\
+    R, C, Java, GNU Octave, Elisp.}}
+	{}
+	{}
+\entry{OS}
+    {\textbf{Linux Servers} \textnormal{(RedHat, CentOS, Ubuntu, Debian)}\\
+    \textbf{BSD servers}\\
+    \textbf{Windows}...}
+	{}
+	{}
+\entry{Sys-Admin}
+      {\textbf{High Availability} \textnormal{(HAProxy, Keepalived, Pacemaker)}\\
+      \textbf{Security} \textnormal{(Standards Linux Permissions, ACL, SELinux)}\\
+      \textbf{Troubelshooting}\\
+      \textbf{Network Services} \textnormal{(DNS, DHCP, NFS, SMB, iSCSI)}\\
+      \textbf{Storage} \textnormal{(GlusterFS, NFS-Ganesha)}\\ 
+      \textbf{Monitoring} \textnormal{(Zabbix, Grafana, Prometheus)}\\ 
+      \textbf{Authentication} \textnormal{(LDAP, Kerberos)}} 
+	{}
+	{}
+\entry{DevOps}
+	{Anisble, Vagrant, Git, GitHub, GitHub-Actions, Docker, Packer}
+	{}
+	{}
+\entry{Virtualization}
+    {KVM \& QEMU, VirtualBox, Proxmox}
+	{}
+	{}
+\entry{Networking}
+    {Cisco IOS, Routing \& Switching Protocols, GNS3}
+	{}
+	{}
+\entry{Databases}
+	{MySQL}
+	{}
+	{}
+\entry{Graphic Design}
+	{Inkscape, Gimp, Photoshop, Blender}
+%- I have been in the graphic design field for nearly 10 years, at first it was just a hobby, gradually turning into part-time job since 2015
+	{}
+
+\section{Professional Courses}
+\begin{itemize}
+  \item (CCNP ROUTE) Implementing Cisco IP Routing (ICTTowers, Sidi bel Abess)
+\item (CCNP SWITCH) Implementing Cisco IP Switching  (in ICTTowers, Sidi bel Abess)
+\item Cisco Networking \& Security Fundamentals (in ICTTowers, Sidi bel Abess)
+\item Implementing Cisco IOS Network Security (IINS-CCNA Security) (in ICTTowers, Sidi bel Abess)
+\end{itemize}
+% }}}
+% Pres & Courses {{{1
+\section{Presentations, Courses, Public Code \& Other}
+% Courses {{{2
+\subsection{Courses}
+\label{sec:class}
+I Taught 80+ students on the basic of UNIX/Linux, System Administration, Network Administration, RHCSA \& RHCE for 3 years\\\\
+\entry{2018--2019}
+	{RHCSA Courses-- ``RedHat Certified System Administrator''}
+	{\esi}
+
+\entry{2019--2020}
+	{RHCSA Courses-- ``RedHat Certified System Administrator''}
+	{\esi -- Ingeniums Club}
+
+\entry{2020--2021}
+    {RedHat Special Course(AlphaBit's Cells Program)-- ``became a Linux expert''}
+	{\esi -- AlphaBit Club}
+
+%}}}
+
+% Presentations {{{2
+\subsection{Presentations}
+\entry{2015}
+	{Design -- ``Your first steps into the world of Design''}
+	{\med}
+
+\entry{2017}
+	{Design -- ``Introduction for Design World''}
+	{\esi}
+
+\entry{2017}
+	{``Introduction for Gnu-Linux'' --Basics of system installation \& daily handling of it
+	\href {https://github.com/kebairia/My_Presentations/blob/master/intro_linux} {\gh}}
+	{\med}
+
+\entry{2018}
+        {``Linux Installation Party''}
+	{\med}
+
+%\entry{2019}
+	%{``Linux Installation Party''
+	%\href {https://github.com/kebairia/My_Presentations/tree/master/install_party} {\gh}}
+	%{\esi -- Ingeniums Club}
+% }}}
+% Public Code and Scripts{{{2
+\subsection{Public Code and Scripts}
+\label{sec:code}
+
+\entry{Started 2021}
+    {3pnt14 \href{https://github.com/3pnt14}{\gh}}
+    {GitHub account for my Youtube channel}
+    {I keep a separate GitHub account for my YouTube video code, the YouTube channel's website, and so on.}
+\entry{Started 2020}
+    {micro-emacs(emacs distrobution)\href{https://github.com/kebairia/micro-emacs}{\gh}}
+    {Minimal, Well Designed distribution of emacs.} 
+    {An Emacs Distribution that i maintain, for developing,fully featured scientific papers editor, organizer, and many more...}
+\entry{Started 2020}
+    {ZARS \href{https://github.com/kebairia/zars}{\gh}}
+	{Arch,Arch-based auto-ricing/config script}
+    {An Automation Script that i maintain, for auto ricing and Configurations of Any Arch based distrobution, aims on minimalisim, security, efficiency and beauty}
+\entry{Started 2021}
+    {vagrant-cluster \href{https://github.com/kebairia/vagrant-cluster}{\gh}}
+    {a fully automated cluster of virtual machines}
+    {I developed my own configuration file for generating a completely automated cluster of virtual machines using vagrant as the provisioner and kvm as the hypervisor. You can provide everything you need for a virtual machine in this configuration file, including the number of CPU cores, RAM, virtual network interfaces of various types, multiple partitions, and so on.}
+\entry{Started 2021}
+    {org-master \href{https://github.com/kebairia/org-master}{\gh}}
+    {Emacs Distribution for scientific/thesis writing}
+    {I'm working on an Emacs distribution for scientific/thesis writing, with the purpose of creating a self-contained application that handles and simplifies the way we write academic papers.}
+
+% Other {{{2
+\subsection{Other}
+\begin{itemize}
+  \item My \link{https://github.com/kebairia/emacs-config}{Emacs’s Configuration \gh}
+  \item My build of the the suckless \link{https://github.com/kebairia/st}{simple terminal (st) \gh} with added homerow binds and small improvements.
+  \item My build of the the suckless \link{https://github.com/kebairia/dwm}{dwm window manager (dwm) \gh} a well design, fully function distro of dwm.
+\end{itemize}
+% }}}
+
+%Awards{{{1
+\section{Awards}
+\begin{itemize}
+  \item \award  \textbf{1st Place} (nationally) in  Graphic Design category \emph{Festival ``\textbf{Bahjah}''}
+\end{itemize}
+
+\begin{itemize}
+  \item \award  MLH orgnized by Github \& Microsoft \emph{ESI-SBA ``\textbf{2019}''}
+\end{itemize}
+
+\begin{itemize}
+  \item \award  \textbf{6th/30 Place} Coding Challenge \emph{ESI-SBA ``\textbf{2019}''}
+\end{itemize}
+%}}}
+
+% Languages {{{1
+\section{Languages}
+Arabic(Native Language), French, English
+% }}}
+% Hobbies {{{1
+\section{Hobbies}
+
+Philosophy (especially philosophy of science, epistemology and philosophy of religion), human evolution and prehistory, free (i.e. libre) software, survivalism, medieval thought.
+
+% }}}
 \end{document}
