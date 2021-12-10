@@ -1,4 +1,6 @@
 cv.*
 *.tex
+*.old
+*old
 !cv.tex
 !cv.cls
