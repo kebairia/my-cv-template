@@ -72,10 +72,10 @@
 % Entries
 %--------
 \newcommand{\entry}[4]{
-\begin{minipage}[t]{.15\linewidth}
+\begin{minipage}[t]{.16\linewidth}
 \textsc{#1}
 \end{minipage}
-\begin{minipage}[t]{.80\linewidth}
+\begin{minipage}[t]{.8\linewidth}
 {\bf#2}\\\textit{#3}\\ \normalsize{#4}
 \end{minipage}\\
 }
