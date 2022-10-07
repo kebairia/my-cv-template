@@ -65,8 +65,8 @@
 %% You name here
 %---------------
 \newcommand{\name}[1]{%
-    \centerline{\normalsize\bfseries{#1}}
-\vspace{.3cm}
+    \centerline{\Large\bfseries{#1}}
+\vspace{.7cm}
 }
 % Entries
 %--------
