@@ -86,37 +86,30 @@
     \hspace{3cm}
 }
 %Certifications
-%\newcommand{\certif}[3]{%
 
-\newdimen\@myBoxHeight%
-\newdimen\@myBoxDepth%
-\newdimen\@myBoxWidth%
-\newdimen\@myBoxSize%   %}
-\newcommand{\SquareBox}[2][]{%
-    \settoheight{\@myBoxHeight}{#2}% Record height of box
-    \settodepth{\@myBoxDepth}{#2}% Record depth of box
-    \settowidth{\@myBoxWidth}{#2}% Record width of box
-    \pgfmathsetlength{\@myBoxSize}{max(\@myBoxWidth,(\@myBoxHeight+\@myBoxDepth))}%
-    \tikz \node [shape=rectangle, shape aspect=1,draw=red,inner sep=6\pgflinewidth, minimum size=\@myBoxSize,#1] {#2};%
-}%
-\newcommand{\certif}[1]{
-    \SquareBox[draw=black, thick, fill=yellow!10, rounded corners=2pt]{#1}
+\newcommand{\certif}[4]{
+\begin{minipage}[t]{.16\linewidth}
+\textsc{#1}
+\end{minipage}
+\begin{minipage}[t]{.8\linewidth}
+    {\bf#2}  -- \textit{#3}
+\end{minipage}\\
 }
 % skills
 
-\usepackage{tikz}
+%\usepackage{tikz}
 
-\definecolor{white}{RGB}{255,255,255}
-\definecolor{gray}{HTML}{4D4D4D}
-\definecolor{_black}{HTML}{1d2021}
-\definecolor{maingray}{HTML}{B9B9B9}
+%\definecolor{white}{RGB}{255,255,255}
+%\definecolor{gray}{HTML}{4D4D4D}
+%\definecolor{_black}{HTML}{1d2021}
+%\definecolor{maingray}{HTML}{B9B9B9}
 
-\newcommand\skills[1]{ 
-    \begin{tikzpicture}
-        \foreach [count=\i] \x/\y in {#1}{
-            \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
-            \draw[fill=white,_black](0,\i) rectangle (\y,\i+0.4);
-            \node[above right] at (0,\i+0.4) {\x};
-        }
-    \end{tikzpicture}
-}
+%\newcommand\skills[1]{ 
+    %\begin{tikzpicture}
+        %\foreach [count=\i] \x/\y in {#1}{
+            %\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+            %\draw[fill=white,_black](0,\i) rectangle (\y,\i+0.4);
+            %\node[above right] at (0,\i+0.4) {\x};
+        %}
+    %\end{tikzpicture}
+%}
