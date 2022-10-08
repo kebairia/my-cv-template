@@ -11,6 +11,6 @@ build: cv.tex cv.cls
 	xelatex ${FLAGS} ${CV}
 
 watch: cv.tex cv.cls
-	@find . -type f | entr -c xelatex ${FLAGS} ${CV}
+	@find . -type f | entr -c xelatex ${FLAGS} ${CV} && cp ~/dox/wrk/latex/cv/cv.pdf ~/CV_Zakaria_Kebairia_2022.pdf
 
 .PHONY: clean
