@@ -5,7 +5,7 @@
 \ProvidesClass{mire}[2021/11/24 Minimal resume class]
 \usepackage{geometry}
 \usepackage[utf8]{inputenc}
-\geometry{a4paper, margin=.4in,top=.2in}
+\geometry{a4paper, margin=.3in,top=.2in}
 
 \usepackage{graphicx}
 
@@ -19,7 +19,7 @@
 \definecolor{hd-brown} {RGB}{ 90, 15, 20}
 \definecolor{hd-beige} {RGB}{245, 240, 234}
 \definecolor{hd-yellow}{RGB}{255, 191, 0}
-\definecolor{hd-blue}  {RGB}{70, 129, 180}
+\definecolor{hd-blue}  {RGB}{40, 100, 200}
 
 \usepackage{fontspec}
 \setmainfont{Cronos Pro}
@@ -32,7 +32,7 @@
   colorlinks = true,
   citecolor  = black,
   linkcolor  = black,
-  urlcolor   = black,
+  urlcolor   = hd-blue,
   filecolor  = black,      
   pdfpagemode= FullScreen,
   ]{hyperref}
