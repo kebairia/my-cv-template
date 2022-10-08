@@ -95,6 +95,14 @@
     {\bf#2}  -- \textit{#3}
 \end{minipage}\\
 }
+\newcommand{\slimentry}[4]{
+\begin{minipage}[t]{.16\linewidth}
+\textsc{#1}
+\end{minipage}
+\begin{minipage}[t]{.8\linewidth}
+    {#2}  -- \textit{#3}
+\end{minipage}\\
+}
 % skills
 
 %\usepackage{tikz}
