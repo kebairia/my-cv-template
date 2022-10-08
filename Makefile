@@ -8,7 +8,8 @@ clean:
 	rm -rf ${FILES}
 
 build: cv.tex cv.cls
-	xelatex ${FLAGS} ${CV}
+	xelatex ${FLAGS} ${CV} && cp ~/dox/wrk/latex/cv/cv.pdf ~/CV_Zakaria_Kebairia_2022.pdf
+
 
 watch: cv.tex cv.cls
 	@find . -type f | entr -c xelatex ${FLAGS} ${CV} && cp ~/dox/wrk/latex/cv/cv.pdf ~/CV_Zakaria_Kebairia_2022.pdf
