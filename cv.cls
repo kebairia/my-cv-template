@@ -83,7 +83,7 @@
 %---------
 \newcommand{\contact}[2]{
     \href {#1} {\emph {#2}}
-    \hspace{3cm}
+    \hspace{2.5cm}
 }
 %Certifications
 
