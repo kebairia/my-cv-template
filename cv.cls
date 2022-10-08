@@ -82,7 +82,25 @@
 % Contacts
 %---------
 \newcommand{\contact}[2]{
-  \href {#1} {\emph {#2}}
+    \href {#1} {\emph {#2}}
+    \hspace{3cm}
+}
+%Certifications
+%\newcommand{\certif}[3]{%
+
+\newdimen\@myBoxHeight%
+\newdimen\@myBoxDepth%
+\newdimen\@myBoxWidth%
+\newdimen\@myBoxSize%   %}
+\newcommand{\SquareBox}[2][]{%
+    \settoheight{\@myBoxHeight}{#2}% Record height of box
+    \settodepth{\@myBoxDepth}{#2}% Record depth of box
+    \settowidth{\@myBoxWidth}{#2}% Record width of box
+    \pgfmathsetlength{\@myBoxSize}{max(\@myBoxWidth,(\@myBoxHeight+\@myBoxDepth))}%
+    \tikz \node [shape=rectangle, shape aspect=1,draw=red,inner sep=6\pgflinewidth, minimum size=\@myBoxSize,#1] {#2};%
+}%
+\newcommand{\certif}[1]{
+    \SquareBox[draw=black, thick, fill=yellow!10, rounded corners=2pt]{#1}
 }
 % skills
 
