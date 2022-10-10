@@ -1,5 +1,5 @@
 % vim: set ft=tex
-\LoadClass[11pt, letterpaper]{article}
+\LoadClass[12pt, letterpaper]{article}
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mire}[2021/11/24 Minimal resume class]
