@@ -79,6 +79,13 @@
 \end{minipage}\\
 }
 
+%\newcommand{\entry}[4]{
+%\begin{minipage}[t]{1\linewidth}
+    %{\bf#2}\\\textit{#3}\hfill{#1}\\ \hspace{20cm}\normalsize{#4}
+%\end{minipage}\\
+%}
+
+
 % Contacts
 %---------
 \newcommand{\contact}[2]{
