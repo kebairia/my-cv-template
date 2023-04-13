@@ -13,7 +13,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Fonts & colours
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 
 \definecolor{hd-red}   {RGB}{197, 13, 41}
 \definecolor{hd-brown} {RGB}{ 90, 15, 20}
